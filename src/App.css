@@ -1,38 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
 .App {
+  font-family: 'Varela';
+}
+
+nav {
+  margin-top: 2px;
+  width: 100%;
+  display: flex;
+  align-content: space-between;
+  background-color: #ffffff;
+}
+
+nav button {
+  border: none;
+  background-color: #ffffff;
+}
+
+.logo-main {
+  filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+}
+
+.main-section {
+  font-size: 18px;
+  padding-top: 40px;
+  font-family: 'Varela';
+  background-color: #ffffff;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 230px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-search {
+  filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+  background-color: #ece1e1;
+  width: 247px;
+  height: 100px;
+  border: none;
+  border-radius: 17px;
+  font-size: 28px;
+  position: relative;
+  bottom: -110px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.middle-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #3d3d3d;
+  filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+  border-radius: 18px;
+  color: #fdfdfd;
+}
+
+.main-paragraph {
+  font-size: 21px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.bottom-section {
+  color: #000000;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
