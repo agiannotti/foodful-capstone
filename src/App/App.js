@@ -1,14 +1,15 @@
 import './App.css';
-import { Link } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
+
 import logo from './Convention-logo.png';
 import burger from './Burger.png';
 
-function App() {
+export default function App() {
   return (
     <div className='App'>
       <header className='App-header'>
         <nav>
-          <Link to='/nav'>
+          <Link to='/directory'>
             <button>
               <img
                 className='burger-menu'
@@ -112,5 +113,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
