@@ -1,16 +1,20 @@
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Main from '../Main/Main';
+import FoodfulPage from '../../routes/FoodfulPage/FoodfulPage';
+import FoodfulListPage from '../../routes/FoodfulListPage/FoodfulListPage';
 
-class App extends Component() {
-  render() {
-    return (
-      <div className='App'>
-        <Main />
+function App() {
+  return (
+    <div className='App'>
+      <div className='App__main'>
+        <Switch>
+          <Route exact path={'/'} component={FoodfulPage} />
+          <Route exact path={'/list'} component={FoodfulListPage} />
+        </Switch>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;
